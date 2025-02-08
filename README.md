@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Laravel ProgressBar with Queue Job Batching
 
-## Getting Started
+2 types of file uploaders with progress bar
 
-First, run the development server:
+1. Excel Uploader - This is a progress bar for uploading files and can upload millions of record CSV files. Queues and job batching do this. so using multiple small jobs and making them as batches we can get the progress of the execution of each job and display it as a progress bar. Even if refresh, we can track the progress here and in the background, the excel upload will progress. Any type of excel can upload
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Media uploader - This is a progress bar for uploading files and can upload any type and any size of files. It uses chunk method in front end and using queue and job for this.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is front end for Laravel back end
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+for using the project follow the below steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repo
 
-## Learn More
+2. npm install
 
-To learn more about Next.js, take a look at the following resources:
+3. npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots - Laravel API with front end Next JS 15
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. dashboard
+   ![dashboard](./public/images/dashboard.png)
